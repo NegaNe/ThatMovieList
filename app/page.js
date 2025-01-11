@@ -58,7 +58,7 @@ export default function Home() {
         data !== null ? (
         <div className='movie-container'>
           {data.results.map((movie) => (
-            <div className="card" key={movie.id}>
+            <div className="card" key={movie.id} >
               {
               movie.poster_path&&(<Image src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} 
               alt={`${movie.title} poster`} width={250} height={300}/>)

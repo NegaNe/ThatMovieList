@@ -1,15 +1,17 @@
 
+import Link from "next/link";
+
 function Navbar() {
   return (
     <nav className="navbar">
       <ul className="nav-list">
-        <li className="nav-item"><a className="nav-link">ThatMovieList</a></li>
-        <li className="nav-item"><a href="../" className="nav-link">Home</a></li>
-        <li className="nav-item"><a href="/ui/about" className="nav-link">About</a></li>
-        <li className="nav-item"><a href="/ui/contact" className="nav-link">Contact</a></li>
+        <Link className="nav-item" href={"/"}>ThatMovieList</Link>
+        <Link className="nav-item"href="../">Home</Link>
+        <Link className="nav-item"href="/ui/about">About</Link>
+        <Link className="nav-item"href="/ui/contact">Contact</Link>
       <div className="nav-account">
-        <a href="#">Login</a>
-        <a href="#">Sign Up</a>
+      <Link className="nav-item"href="/ui/login">Login</Link>
+      <Link className="nav-item"href="/ui/signup">Sign Up</Link>
       </div>
 
       </ul>
