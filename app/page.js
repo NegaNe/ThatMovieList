@@ -38,18 +38,18 @@ export default function Home() {
       data !== null ? (
         <div className='movie-container'>
           {data.results.map((movie) => (
+          
             <div className="card" key={movie.id}>
               {
+              
               movie.poster_path&&(<Image src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} 
               alt={`${movie.title} poster`} width={250} height={300}/>)
               } 
-              <div className='card-content'>
-              <div className='list-style'>{movie.title}</div>
-                <p>
-                {movie.overview}
-                </p>
 
-              </div>
+                <div className='card-content'>
+                <div className='movie-title'>{movie.title}</div>
+                <p className='movie-overview'>{movie.genres}</p>
+                </div>
             </div>
           ))}
         </div>
