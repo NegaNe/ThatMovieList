@@ -1,5 +1,5 @@
-import Navbar from '../components/navbar';
-import '../../app/globals.css';
+import Navbar from '../navbar';
+import '../../../app/globals.css';
 
 async function getNotes() {
   const res = await fetch('');

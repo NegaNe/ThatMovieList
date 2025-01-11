@@ -1,4 +1,4 @@
-import Navbar from '../components/navbar';
+import Navbar from '../../ui/navbar';
 
 async function getNotes() {
   const res = await fetch('');

@@ -1,8 +1,10 @@
+import './globals.css'
+
 export default function RootLayout({ children }) {
     return (
       <html lang="en">
         <head>
-          <title>CinemaNGN</title>
+          <title>ThatMovieList</title>
         </head>
         <body>
           {children}
