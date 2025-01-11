@@ -1,8 +1,7 @@
 "use client";
 import Image from 'next/image';
-
 import { useEffect, useState } from 'react';
-import Navbar from './ui/navbar';
+
 
 export default function Home() {
   const [data, setData] = useState(null);
@@ -39,8 +38,6 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar />
-
     <div className='column-wrapper'>
       <div className='content-wrapper'>
         <form 
@@ -68,7 +65,9 @@ export default function Home() {
               } 
                 <div className='card-content'>
                 <div className='movie-title'>{movie.title}</div>
-                <p className='movie-overview'>Release Date{movie.release_date}</p>
+                <p className='movie-description'>Release Date: {movie.release_date}</p>
+                <p className='movie-description'>Avg Score: {movie.vote_average.toFixed(2)} / 10</p>
+                <p className='movie-description'>Reviews: {movie.vote_count}</p>
                 </div>
             </div>
           ))}

@@ -7,7 +7,6 @@ async function getNotes() {
 export default async function AboutPage() {
   return (
     <div>
-      <Navbar />
       <h1>Contact Me!</h1>
       <p>This is the About page.</p>
     </div>

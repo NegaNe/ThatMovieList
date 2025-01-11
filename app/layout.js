@@ -1,4 +1,5 @@
 import './globals.css'
+import Navbar from './ui/navbar';
 
 export default function RootLayout({ children }) {
     return (
@@ -7,6 +8,7 @@ export default function RootLayout({ children }) {
           <title>ThatMovieList</title>
         </head>
         <body>
+          <Navbar />
           {children}
         </body>
       </html>
