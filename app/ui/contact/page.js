@@ -1,4 +1,3 @@
-import Navbar from '../../ui/navbar';
 
 async function getNotes() {
   const res = await fetch('');
